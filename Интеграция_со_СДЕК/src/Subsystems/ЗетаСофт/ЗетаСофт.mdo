@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f48f3904-64b2-4c5f-92b1-b531709f243d">
+  <name>ЗетаСофт</name>
+  <synonym>
+    <key>ru</key>
+    <value>ЗетаСофт</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Role.ПолныеПрава</content>
+  <subsystems>ИнтеграцияСВнешнимиСервисами</subsystems>
+  <subsystems>ИнтергацияСоСДЕК</subsystems>
+</mdclass:Subsystem>

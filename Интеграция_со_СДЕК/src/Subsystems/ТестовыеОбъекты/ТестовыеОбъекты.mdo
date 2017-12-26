@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="da8acc9a-ded3-4cd9-a778-867c243506c9">
+  <name>ТестовыеОбъекты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тестовые объекты</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>020a38af-e7ae-4299-92d2-84fc4efed2b5</content>
+  <content>986b9b2c-1b49-48c6-9128-511cd4c1a4df</content>
+</mdclass:Subsystem>

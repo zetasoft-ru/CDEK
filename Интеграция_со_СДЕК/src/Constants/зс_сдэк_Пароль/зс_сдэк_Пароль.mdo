@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3e940214-d33e-4784-a36c-984743930b40">
+  <producedTypes>
+    <managerType typeId="125f8a45-d3fd-4473-b514-e2edffbe900b" valueTypeId="eb11b9bd-a60f-49e5-91b7-73c4f226f13a"/>
+    <valueManagerType typeId="a12ee30d-4473-46ac-b255-ce5f69f797c4" valueTypeId="e6b855a7-df49-426a-ab9c-15fe85289334"/>
+  </producedTypes>
+  <name>зс_сдэк_Пароль</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пароль (Secure_password) СДЭК</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>255</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <passwordMode>true</passwordMode>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

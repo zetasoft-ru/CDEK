@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fdc1aba9-a9cd-479b-80bc-2dceef67a1c3">
+  <producedTypes>
+    <managerType typeId="9ae23197-dda4-46c2-9445-ffe46457dbd6" valueTypeId="c6279fc6-b4b2-409f-a1ed-6fba17cb576d"/>
+    <valueManagerType typeId="c666c536-e7ba-4155-b952-e117863e6d39" valueTypeId="3d9455b2-e149-46da-add9-74b4e6b59807"/>
+  </producedTypes>
+  <name>зс_сдэк_АдресСервераИнтеграцииОбщий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Адрес сервиса интеграции СДЭК (общее API)</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>225</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

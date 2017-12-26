@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="40e139e8-ae76-41a3-bd1d-a5873bdd31e3">
+  <name>ИнтеграцияСВнешнимиСервисами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интеграция с внешними сервисами</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>CommonModule.зс_инт_ЗапросHTTP</content>
+  <content>CommonModule.зс_инт_ИнтеграцияОбщийСервер</content>
+  <content>CommonModule.зс_инт_РаботаСJSON</content>
+  <parentSubsystem>Subsystem.ЗетаСофт</parentSubsystem>
+</mdclass:Subsystem>

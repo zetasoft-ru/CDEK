@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c2f43fab-ff1a-4d15-b42f-e388b13b4297">
+  <producedTypes>
+    <objectType typeId="9cf82cdc-ab99-4e17-bc0c-e8639a6bafbd" valueTypeId="100d193c-7e33-4e6d-879b-809528fa33c7"/>
+    <refType typeId="aefba166-6bc1-4b21-a1f7-3552c2e3db89" valueTypeId="c8d61413-63e2-4297-9564-dd4c0e878b11"/>
+    <selectionType typeId="45a933bd-4576-4e50-bcae-c84f4c01edfb" valueTypeId="576505db-a153-41d7-b3d2-3c2a194c8808"/>
+    <listType typeId="895da6a0-eda1-48d9-85d7-f8ab5c06758f" valueTypeId="93e191db-7477-42a2-bb52-0a84e1f91edc"/>
+    <managerType typeId="7b091741-5f14-47e4-b3b1-f8b2a80e3398" valueTypeId="866778aa-3083-42b7-b240-8da397708824"/>
+  </producedTypes>
+  <name>зс_сдэк_ПунктыВыдачиЗаказов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пункты выдачи заказов СДЭК</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.зс_сдэк_ПунктыВыдачиЗаказов.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.зс_сдэк_ПунктыВыдачиЗаказов.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>10</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.зс_сдэк_ПунктыВыдачиЗаказов.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.зс_сдэк_ПунктыВыдачиЗаказов.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="5b1deb5e-2477-477a-a200-4266fa98c68c">
+    <name>CityCode</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код города</value>
+    </synonym>
+    <comment>Код города по базе СДЭК (см. файл «City_XXX_YYYYMMDD.xls»)</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e4e3b97e-ffdb-4b3b-a12b-a1647646b172">
+    <name>City</name>
+    <synonym>
+      <key>ru</key>
+      <value>Название города</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="56ce3336-b645-4d89-b711-fa2f03988e2c">
+    <name>WorkTime</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим работы</value>
+    </synonym>
+    <comment>Режим работы, строка вида «пн-пт 9-18, сб 9-16»</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6fa1a76e-3c3c-46e0-9e9e-2d30e58c8fbb">
+    <name>Address</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес</value>
+    </synonym>
+    <comment>Адрес (улица, дом, офис) в указанном городе</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="902e4f6a-426c-4cbb-bf3c-6229a7712442">
+    <name>Phone</name>
+    <synonym>
+      <key>ru</key>
+      <value>Телефон</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="490a35ce-69ac-4787-9756-41e7c079d1c3">
+    <name>Note</name>
+    <synonym>
+      <key>ru</key>
+      <value>Примечание</value>
+    </synonym>
+    <comment>Примечание. Описание местоположения.</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0a71cb33-4013-4fc9-8c75-16e58a1ec697">
+    <name>CoordX</name>
+    <synonym>
+      <key>ru</key>
+      <value>Долгота</value>
+    </synonym>
+    <comment>Координаты местоположения (долгота) в градусах</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>6</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c264eb35-7f49-40e9-bb73-3709b2e2cec5">
+    <name>CoordY</name>
+    <synonym>
+      <key>ru</key>
+      <value>Широта</value>
+    </synonym>
+    <comment>Координаты местоположения (широта) в градусах</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>6</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="86ddb0d8-c8a4-465f-a8fc-efa8360e7d73">
+    <name>WeightMin</name>
+    <synonym>
+      <key>ru</key>
+      <value>Минимальный вес (кг.)</value>
+    </synonym>
+    <comment>Минимальный вес (в кг.), принимаемый в ПВЗ (> WeightMin)</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>14</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3194d1d4-ce2f-46a7-9336-0920a603aafb">
+    <name>WeightMax</name>
+    <synonym>
+      <key>ru</key>
+      <value>Максимальный вес (кг.)</value>
+    </synonym>
+    <comment>Максимальный вес (в кг.), принимаемый в ПВЗ (&lt;=WeightMax)</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>14</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a946a1dc-973b-4a01-b755-4f81c9aed1b6">
+    <name>Type</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип ПВЗ</value>
+    </synonym>
+    <comment>Тип ПВЗ: Склад СДЭК или Почтомат партнера, PVZ —  склад СДЭК, POSTOMAT — почтомат партнера СДЭК</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>8</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="829143de-1ecd-49e3-97c0-7c3c45677274">
+    <name>OwnerCode</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код принадлежности компании</value>
+    </synonym>
+    <comment>Принадлежность ПВЗ компании: CDEK — ПВЗ принадлежит компании СДЭК, InPost — ПВЗ принадлежит компании InPost.</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>6</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b0d5cf33-29a8-43c0-a1f6-fbdd166c45c1">
+    <name>CountryCode</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код страны</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>9</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5a477356-5514-48f9-b613-c020d1e43374">
+    <name>CountryName</name>
+    <synonym>
+      <key>ru</key>
+      <value>Название страны</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="170e494f-4fba-483e-93f1-dbdf75cb1583">
+    <name>RegionCode</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код региона</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>9</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2818b006-3153-4181-b65b-3a9ebc378ced">
+    <name>RegionName</name>
+    <synonym>
+      <key>ru</key>
+      <value>Название региона</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="eee44cfa-a6cc-472a-b3f5-b85a20a2bdca">
+    <name>FullAddress</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полный адрес</value>
+    </synonym>
+    <comment>Полный адрес с указанием страны, региона, города, и т.д.</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="334e8e1e-b904-4206-871e-c3762a1850b1">
+    <name>IsDressingRoom</name>
+    <synonym>
+      <key>ru</key>
+      <value>Есть примерочная</value>
+    </synonym>
+    <comment>Есть ли примерочная</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>4</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="51df84c1-8a60-4363-9bb1-c68aa53b003c">
+    <name>HaveCashless</name>
+    <synonym>
+      <key>ru</key>
+      <value>Есть терминал оплаты</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>4</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="026cd94a-29b8-4d92-aa73-c3a1c2e67b1f">
+    <name>NearestStation</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ближайшая остановка</value>
+    </synonym>
+    <comment>Ближайшая станция/остановка транспорта </comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7d37a57e-fa9f-4c82-8923-84a8c78db987">
+    <name>Site</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес сайта ПВЗ</value>
+    </synonym>
+    <comment>Сайт пвз на странице СДЭК</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7ecb33d7-6fb7-499a-a44c-c2f51bf3b497">
+    <name>MetroStation</name>
+    <synonym>
+      <key>ru</key>
+      <value>Станция метро</value>
+    </synonym>
+    <comment>Ближайшая станция метро</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a287941f-d24c-41da-8c5f-a7233335c885">
+    <name>ХешОписанияПоставщика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хеш описания поставщика</value>
+    </synonym>
+    <comment>Хеш строки описания пункта выдачи, который получен от поставщика, нужен для поиска изменившихся пунктов выдачи</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>47</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value>                                               </value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="6be35b9b-69fd-4b20-96c0-61a87af3c9b3">
+    <producedTypes>
+      <objectType typeId="493adaa6-e6d5-4a46-8021-21cc6075cb66" valueTypeId="133b9d2b-b5da-4db9-9f00-e43d86e58480"/>
+      <rowType typeId="9e7af4fd-6957-421a-ae03-c68caf526cc5" valueTypeId="36bf0d54-d1ac-44a4-a666-e7df8cce0b7a"/>
+    </producedTypes>
+    <name>WorkTimeY</name>
+    <synonym>
+      <key>ru</key>
+      <value>Недельный график работы</value>
+    </synonym>
+    <comment>график работы на неделю. Вложенный тег с атрибутами day и period.</comment>
+    <attributes uuid="60486825-41bb-483b-b81b-67bd36300c64">
+      <name>day</name>
+      <synonym>
+        <key>ru</key>
+        <value>День недели</value>
+      </synonym>
+      <comment>Порядковый номер дня начиная с единицы. Понедельник = 1, воскресенье = 7.</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e987e90b-fa82-4cf4-b969-5367fd5cfb46">
+      <name>period</name>
+      <synonym>
+        <key>ru</key>
+        <value>Период работы</value>
+      </synonym>
+      <comment>Ориг. название periods - зарезервированное слово. Период работы в эти дни. ¶Если в этот день не работают, то не отображать. ¶&lt;WorkTimeY day=&quot;1&quot; periods=&quot;10:00/20:00&quot;/>¶&lt;WorkTimeY day=&quot;2&quot; periods=&quot;10:00/20:00&quot;/>¶</comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>20</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="8187e6de-2fc4-44b7-961e-6c8e574bccd7">
+    <producedTypes>
+      <objectType typeId="5ac10063-a94c-4709-bf68-4f9ca70ceb11" valueTypeId="bd0bbd83-a21f-4ed9-a3b5-7a127a0660fc"/>
+      <rowType typeId="af3e3e5f-496a-4be7-8129-bef115ebc7d5" valueTypeId="7d4cb25a-7a2c-444b-ba57-516d727880a2"/>
+    </producedTypes>
+    <name>OfficeImage</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фото офиса</value>
+    </synonym>
+    <comment>Все фото офиса (кроме фото как доехать).</comment>
+    <attributes uuid="1e5727cd-1190-471c-a715-d247d91bb732">
+      <name>url</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ссылка на фото</value>
+      </synonym>
+      <comment>Все фотографии отдельным тегом с атрибутом url. Отображается ссылка на картинку.¶&lt;OfficeImage url=&quot;http://dfdfdf/images/22/47_1_SUR2&quot;/>¶</comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>255</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="7c95b128-a3d6-4317-9132-6f30ad15d27a">
+    <producedTypes>
+      <objectType typeId="1115ccbd-26a4-4919-a065-dcc373ab3d6b" valueTypeId="4b461533-6ee4-4ef0-9147-682030abd9f3"/>
+      <rowType typeId="e94517f5-8515-4f6a-b627-b94ec8e928f9" valueTypeId="fa5445bb-d4e1-43b7-a422-8c4b992a4ddc"/>
+    </producedTypes>
+    <name>OfficeHowGo</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фото - как доехать</value>
+    </synonym>
+    <comment>Картинка с указанием как доехать</comment>
+    <attributes uuid="8b282c7f-fa81-45b2-a4df-2af5aa0e412a">
+      <name>url</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ссылка на схему проезда</value>
+      </synonym>
+      <comment>Картинка с изображением схемы проезда. Отображается ссылка на картинку.¶&lt;OfficeHowGo url=&quot;http://dfdfdf/images/7/42_1_NSK1&quot;/>¶</comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>255</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="120aaa97-f93a-4043-8626-c2e2e9206824">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cfda2422-cf5a-4212-966c-207c42c30fcf">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

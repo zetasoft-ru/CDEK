@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2a1f1fb4-d57b-4306-b4a5-e6f81cbc69e9">
+  <name>зс_сдэк_ИнтеграцияСоСДЭК_ПолныеПрава</name>
+  <synonym>
+    <key>ru</key>
+    <value>Полные права на подсистему интеграции со СДЭК</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="31aad284-cdbc-4502-ab69-70298b8519c8">
+  <name>зс_сдэк_БизнесЛогикаСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бизнес-логика интеграции СДЭК</value>
+  </synonym>
+  <comment></comment>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

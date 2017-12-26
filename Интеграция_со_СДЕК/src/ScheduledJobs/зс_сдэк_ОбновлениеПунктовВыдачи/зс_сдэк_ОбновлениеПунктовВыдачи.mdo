@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4c924c6d-0772-407c-ad5e-02f164df59cd">
+  <name>зс_сдэк_ОбновлениеПунктовВыдачи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обновление пунктов выдачи СДЭК</value>
+  </synonym>
+  <comment></comment>
+  <methodName>CommonModule.зс_сдэк_БизнесЛогикаСервер.ОбновитьПунктыВыдачиЗаказов</methodName>
+  <description>Обновление пунктов выдачи СДЭК</description>
+  <key></key>
+  <use>true</use>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

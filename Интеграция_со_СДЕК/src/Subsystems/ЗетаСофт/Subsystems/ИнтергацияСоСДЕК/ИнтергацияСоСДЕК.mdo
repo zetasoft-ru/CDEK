@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c3a68df3-eecb-4860-ba69-ba1527981023">
+  <name>ИнтергацияСоСДЕК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интергация со СДЕК</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Constant.зс_сдэк_АдресСервераИнтеграцииДляИнтернетМагазинов</content>
+  <content>CommonModule.зс_сдэк_ИнтеграцияСервер</content>
+  <content>CommonModule.зс_сдэк_БизнесЛогикаСервер</content>
+  <content>Catalog.зс_сдэк_ПунктыВыдачиЗаказов</content>
+  <content>CommonModule.зс_сдэк_ПереопределяемыйСервер</content>
+  <content>ScheduledJob.зс_сдэк_ОбновлениеПунктовВыдачи</content>
+  <content>Constant.зс_сдэк_АдресСервераИнтеграцииОбщий</content>
+  <content>Constant.зс_сдэк_Логин</content>
+  <content>Constant.зс_сдэк_Пароль</content>
+  <content>CommonForm.зс_сдэк_НастройкиИнтеграцииСоСДЭК</content>
+  <content>Role.зс_сдэк_ИнтеграцияСоСДЭК_ПолныеПрава</content>
+  <parentSubsystem>Subsystem.ЗетаСофт</parentSubsystem>
+</mdclass:Subsystem>
